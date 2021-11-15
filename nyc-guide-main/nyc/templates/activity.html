@@ -1,0 +1,7 @@
+<h1>{{ activity | name }}</h1>
+
+<ul>
+    {% for activity in activities %}
+    <li>{{ activity.name }}</li>
+    {% endfor %}
+</ul>
