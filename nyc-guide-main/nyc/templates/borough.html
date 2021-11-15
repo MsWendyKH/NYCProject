@@ -1,11 +1,21 @@
-<h1>{{ borough | title }}</h1>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>borough | {{ borough }}</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'stylesheet.css' %}"/>
+    </head>
+    <body>
+        <h1>{{ borough | title }}</h1>
 
-<ul>
-    {% for activity in activities %}
-    <li>
-        <a href="{% url 'activity' borough activity %} "
-            >{{ activity|title }}</a
-        >
-    </li>
-    {% endfor %}
-</ul>
+        <ul>
+            {% for activity in activities %}
+            <li>
+                <a href="{% url 'activity' borough activity %} "
+                    >{{ activity|title }}</a
+                >
+            </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
