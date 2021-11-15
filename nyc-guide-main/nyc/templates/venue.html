@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>venue | {{ venue }}</title>
+        <!--  -->
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'stylesheet.css' %}"/>
+    </head>
+    <body>
+        <h1>{{ venue | title }}</h1>
+
+        <img src= {{ img }} alt="Sorry! Photo not available." width="600" height="400">
+        <p>{{ description }}</p>
+
+        <a href="{% url 'city' %}" >Return Home</a>
+    </body>
+</html>
