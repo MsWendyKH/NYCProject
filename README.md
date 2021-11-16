@@ -2,9 +2,11 @@
 **Emma, Wendy, and Chris' NYC Project!**<p>
 You can use this site and the additions we made to find your way around NYC.<br>
 You can search by Borough, Activity, or Venue.<br>
+Each venue displays a photo of the location and provides a link back to the homepage.<br>
 We chose simple fonts and backgrounds for easy readability and user friendliness.<p>
 
-This website was developed using django, and GitHub for collaboration.<br>
+This website was developed using the Python-based Django web framework.<br>
+GitHub was used for collaboration.<br>
 You can see the whole project and our contributions at:<br>
 https://github.com/MsWendyKH/NYCProject<p>
 
